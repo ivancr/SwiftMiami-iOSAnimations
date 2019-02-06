@@ -10,15 +10,17 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    private let demoTypes = ["UIView.animate",
-                             "CA Animations",
-                             "Particle Animations",
-                             "Chained Animations"]
+    private let demoTypes = ["👩🏾‍💻  UIView.animate",
+                             "👀  CA Animations",
+                             "🎊  Particle Animations",
+                             "🔗  Chained Animations"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "iOS Animations"
+        navigationController?.navigationBar.tintColor = Globals.themeColor
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellId")
         tableView.estimatedRowHeight = 64
         tableView.rowHeight = UITableView.automaticDimension
@@ -32,9 +34,11 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
-        let title = "\(indexPath.row + 1). \(demoTypes[indexPath.row])"
+        let title = demoTypes[indexPath.row]
         cell.textLabel?.text = title
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         cell.accessoryType = .disclosureIndicator
+        cell.heightAnchor.constraint(greaterThanOrEqualToConstant: 80).isActive = true
 
         return cell
     }
