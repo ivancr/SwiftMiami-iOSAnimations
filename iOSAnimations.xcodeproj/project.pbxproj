@@ -20,6 +20,11 @@
 		2C1861532208CF8F005DE639 /* DemoThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1861512208CF8F005DE639 /* DemoThreeViewController.swift */; };
 		2C1861542208CF8F005DE639 /* DemoThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1861522208CF8F005DE639 /* DemoThreeViewController.xib */; };
 		2C186156220A589B005DE639 /* DemoFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C186155220A589B005DE639 /* DemoFourViewController.swift */; };
+		2CB66283220BDA5F00824915 /* DemoFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB66281220BDA5F00824915 /* DemoFiveViewController.swift */; };
+		2CB66284220BDA5F00824915 /* DemoFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB66282220BDA5F00824915 /* DemoFiveViewController.xib */; };
+		2CB66286220BDBF300824915 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CB66285220BDBF300824915 /* explosion.sks */; };
+		2CB66289220BE27E00824915 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB66288220BE27E00824915 /* SpriteKit.framework */; };
+		2CB6628D220BE69D00824915 /* swiftBirds.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2CB6628C220BE69D00824915 /* swiftBirds.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		2C1861512208CF8F005DE639 /* DemoThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoThreeViewController.swift; sourceTree = "<group>"; };
 		2C1861522208CF8F005DE639 /* DemoThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoThreeViewController.xib; sourceTree = "<group>"; };
 		2C186155220A589B005DE639 /* DemoFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFourViewController.swift; sourceTree = "<group>"; };
+		2CB66281220BDA5F00824915 /* DemoFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFiveViewController.swift; sourceTree = "<group>"; };
+		2CB66282220BDA5F00824915 /* DemoFiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoFiveViewController.xib; sourceTree = "<group>"; };
+		2CB66285220BDBF300824915 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		2CB66288220BE27E00824915 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		2CB6628C220BE69D00824915 /* swiftBirds.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = swiftBirds.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB66289220BE27E00824915 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +67,7 @@
 			children = (
 				2C18612C22068708005DE639 /* iOSAnimations */,
 				2C18612B22068708005DE639 /* Products */,
+				2CB66287220BE27D00824915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,8 @@
 				2C186149220694AF005DE639 /* Globals.swift */,
 				2C1861392206870A005DE639 /* Info.plist */,
 				2C1861362206870A005DE639 /* LaunchScreen.storyboard */,
+				2CB66285220BDBF300824915 /* explosion.sks */,
+				2CB6628C220BE69D00824915 /* swiftBirds.sks */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -100,8 +114,18 @@
 				2C1861512208CF8F005DE639 /* DemoThreeViewController.swift */,
 				2C1861522208CF8F005DE639 /* DemoThreeViewController.xib */,
 				2C186155220A589B005DE639 /* DemoFourViewController.swift */,
+				2CB66281220BDA5F00824915 /* DemoFiveViewController.swift */,
+				2CB66282220BDA5F00824915 /* DemoFiveViewController.xib */,
 			);
 			path = "Demo View Controllers";
+			sourceTree = "<group>";
+		};
+		2CB66287220BE27D00824915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB66288220BE27E00824915 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C18614E2208B6BE005DE639 /* DemoTwoViewController.xib in Resources */,
+				2CB6628D220BE69D00824915 /* swiftBirds.sks in Resources */,
+				2CB66286220BDBF300824915 /* explosion.sks in Resources */,
 				2C1861542208CF8F005DE639 /* DemoThreeViewController.xib in Resources */,
 				2C18614522068F2A005DE639 /* DemoOneViewController.xib in Resources */,
+				2CB66284220BDA5F00824915 /* DemoFiveViewController.xib in Resources */,
 				2C1861382206870A005DE639 /* LaunchScreen.storyboard in Resources */,
 				2C1861352206870A005DE639 /* Assets.xcassets in Resources */,
 			);
@@ -179,6 +206,7 @@
 			files = (
 				2C18614D2208B6BE005DE639 /* DemoTwoViewController.swift in Sources */,
 				2C18614122068C45005DE639 /* MainTableViewController.swift in Sources */,
+				2CB66283220BDA5F00824915 /* DemoFiveViewController.swift in Sources */,
 				2C18614422068F2A005DE639 /* DemoOneViewController.swift in Sources */,
 				2C18612E22068708005DE639 /* AppDelegate.swift in Sources */,
 				2C1861532208CF8F005DE639 /* DemoThreeViewController.swift in Sources */,

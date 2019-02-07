@@ -13,7 +13,8 @@ class MainTableViewController: UITableViewController {
     private let demoTypes = ["👩🏾‍💻  UIView.animate",
                              "👀  CA Animations",
                              "🎊  Particle Animations",
-                             "🔗  Chained Animations"]
+                             "🔗  Chained Animations",
+                             "👾  SpriteKit Animations"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,26 +48,17 @@ class MainTableViewController: UITableViewController {
         var demoVC = UIViewController()
         
         switch indexPath.row {
-        case 0:
-            demoVC = DemoOneViewController()
-            demoVC.navigationItem.title = demoTypes[indexPath.row]
-        
-        case 1:
-            demoVC = DemoTwoViewController()
-            demoVC.navigationItem.title = demoTypes[indexPath.row]
-            
-        case 2:
-            demoVC = DemoThreeViewController()
-            demoVC.navigationItem.title = demoTypes[indexPath.row]
-            
-        case 3:
-            demoVC = DemoFourViewController()
-            demoVC.navigationItem.title = demoTypes[indexPath.row]
+        case 0: demoVC = DemoOneViewController()
+        case 1: demoVC = DemoTwoViewController()
+        case 2: demoVC = DemoThreeViewController()
+        case 3: demoVC = DemoFourViewController()
+        case 4: demoVC = DemoFiveViewController()
             
         default:
             assertionFailure("Cell not configured yet")
         }
         
+        demoVC.navigationItem.title = demoTypes[indexPath.row]
         navigationController?.pushViewController(demoVC, animated: true)
     }
 }
